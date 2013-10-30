@@ -73,7 +73,7 @@ class Index extends Controller {
 	 *
 	 * @param string : Main Title of the Webpage.
 	 */
-	function __construct( $__PAGE_TITLE, $__URIObject ) {
+	function __construct( $__PAGE_TITLE ) {
 		$this->templates();
 		self::$__URIObject = RESTful::getURIobject();
 		$this->main( $__PAGE_TITLE );
@@ -85,4 +85,4 @@ class Index extends Controller {
  * @param string : The Main Title of the output page.
  * @param array : Parsed URIObject of the given RESTful HTTP Request.
  */
-new Index("ALL ITEMS", RESTful::getURIobject());
+new Index("ALL ITEMS");
