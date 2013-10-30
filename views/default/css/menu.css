@@ -1,0 +1,13 @@
+div.menu a.menuitem {
+	padding: 20px;
+	color: black;
+	border-right: 1px solid #cccccc;
+	text-decoration: none;
+}
+div.menu a.menuitem + a.lastitem {
+	border-right: none;
+}
+div.menu a.menuitem:hover {
+	color: #0f0;
+	text-decoration: none;
+}
