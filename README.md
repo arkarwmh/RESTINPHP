@@ -1,10 +1,6 @@
 REST-in PHP (RIP) Framework v1.1
 ================
 
-Change logs:
-
- * Improved the Library Class (RESTful) by adding a new Function "parseURIobject", to handle better the parsing of URI for the RESTful purpose.
-
 A simply RESTful PHP MVC Framework with OOP structured approach which is then quite pure &amp; really easy to start with. Yet another great kick-starter for the PHP Applications to get quickly boosted.
 
  * Author: Arkar WINN MINN HTWE
@@ -13,6 +9,10 @@ A simply RESTful PHP MVC Framework with OOP structured approach which is then qu
  * Website: http://www.restinphp.com
  * Released under MIT License (c) 2014
  * First released by 2013
+
+Change logs v1.1:
+
+ * Improved the Library Class (RESTful) by adding a new Function "parseURIobject", to handle better the parsing of URI for the RESTful purpose.
 
 
 1. Adjust in .HTACCESS
