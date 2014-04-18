@@ -9,7 +9,7 @@
  * Email: arkarwmh@gmail.com
  * Repository: https://github.com/arkarwmh/restinphp
  * Website: http://www.restinphp.com
- * Released under MIT License (c) 2013
+ * Released under MIT License (c) 2014
  */
 
 class RESTful extends Router {
@@ -26,9 +26,7 @@ class RESTful extends Router {
 		if ( !isset($__REQUESTED_URI) ) $__REQUESTED_URI = $_SERVER['REQUEST_URI'];
 		if ( !isset($__REQUESTED_METHOD) ) $__REQUESTED_METHOD = $_SERVER['REQUEST_METHOD'];
 		
-		$__URI_SEGMENTS = explode( '/', $__REQUESTED_URI );
-		array_shift( $__URI_SEGMENTS ); //Note: Slicing the first portion out
-		array_shift( $__URI_SEGMENTS ); //Note: Slicing the another first portion out
+		$__URI_SEGMENTS = self::parseURIobject( $__REQUESTED_URI );
 		
 		self::$__URIOBJECT['controller']	= $__URI_SEGMENTS[0];
 		
@@ -44,6 +42,24 @@ class RESTful extends Router {
 
 		if ( $__IS_TO_FULLY_ROUTE )
 			parent::route( self::$__URIOBJECT );
+	}
+	/**
+	 * Parse the given RESTful URI to return the Array of URI Segments by detecting the containing Controller & Arguments inside
+	 * This is important to detect which part of URI is Controller and which are Arguments
+	 * @return array : An array contains the segments of Controller and Arguments. By default, the Controller will be at the First Room of the Array, followed by the Arguments
+	 */
+	private static function parseURIobject( $URI ) {
+		$__REWRITEBASE_SEGMENTS = explode("/", __REWRITEBASE);
+		$__URI_SEGMENTS = explode("/", $URI);
+
+		for($i=0; $i<sizeof($__REWRITEBASE_SEGMENTS); $i++ ) {
+			if ( $__REWRITEBASE_SEGMENTS[$i] == $__URI_SEGMENTS[0] ) {
+				array_shift( $__URI_SEGMENTS );
+			} else {
+				break;
+			}
+		}
+		return $__URI_SEGMENTS;
 	}
 	/**
 	 * Returns the current URI Object which has been processed by the route() function above.
