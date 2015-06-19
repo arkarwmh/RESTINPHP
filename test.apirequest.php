@@ -2,7 +2,7 @@
 /**
  * This file is to test the RESTful API via POST.
  * NO NEED to be in the same directory with the RIP Framework.
- * Just put this file ANYWHERE and run to test.
+ * Just put this file ANYWHERE and run to test..
  */
 
 $api_url = "http://localhost/rip/item/";
