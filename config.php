@@ -1,5 +1,5 @@
 <?php
-/*******
+/**
  * File: config.php
  * Description: Main Configuration File
  *
