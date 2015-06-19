@@ -1,1 +1,0 @@
-$ git add .; git reset -- config.php; git commit -m "Updated by Arkar WINN MINN HTWE"; git push origin master;
