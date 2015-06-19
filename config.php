@@ -34,16 +34,10 @@ $__CONTROLLERS_DIRECTORY[] = array("stock", "item");
 define('__DEFAULT_CONTROLLER', "home");
 
 /**
- * SITEBASE is the Full URL of the website.
- * IMPORTANT: WITHOUT Trailing Slash.
- */
-define('__SITEBASE', "http://localhost/myproject");
-
-/**
  * REWRITEBASE is the documentroot of the website.
- * IMPORTANT: Carefull! This **MUST** be exactly the same with 'RewriteBase' defined inside the .htaccess file.
- * If this is a Domain Name already, just leave a Single Slash '/'.
- * If it's a sub-directory, wrap the name inside two Slashes, like '/myproject/'.
+ * IMPORTANT: This **MUST BE** exactly the same with 'RewriteBase' defined inside the .HTACCESS file.
+ * If the project path is a Domain's Document Root already, then just leave a Single Slash '/'.
+ * If it's a sub-directory, wrap the path inside the Slashes, like '/myproject/'.
  */
 define('__REWRITEBASE', '/myproject/');
 

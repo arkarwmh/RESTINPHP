@@ -14,8 +14,8 @@
 				<?php
 					foreach ($items as $item) {
 						echo '<tr>';
-						echo '	<td><a href="'.__SITEBASE.'/item/'.$item["id"].'">'.$item["id"].'</a></td>';
-						echo '	<td><a href="'.__SITEBASE.'/item/'.$item["id"].'">'.$item["name"].'</a></td>';
+						echo '	<td><a href="/item/'.$item["id"].'">'.$item["id"].'</a></td>';
+						echo '	<td><a href="/item/'.$item["id"].'">'.$item["name"].'</a></td>';
 						echo '	<td>'.$item["stock"].'</td>';
 						echo '</tr>';
 					}
@@ -23,7 +23,7 @@
 			</table>
 
 			<br />
-			<img src="<?php echo __SITEBASE; ?>/images/sample.jpg" /><br />
+			<img src="/images/sample.jpg" /><br />
 			Htaccess Test (Image call sample)
 		</div>		
 	</div>
