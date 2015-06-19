@@ -37,7 +37,7 @@ define('__DEFAULT_CONTROLLER', "home");
  * SITEBASE is the Full URL of the website.
  * IMPORTANT: WITHOUT Trailing Slash.
  */
-define('__SITEBASE', "http://rip.arkar.net");
+define('__SITEBASE', "http://www.example.com");
 
 /**
  * REWRITEBASE is the documentroot of the website.
@@ -62,10 +62,10 @@ define('__CONTROLLERS_DIRECTORY', serialize($__CONTROLLERS_DIRECTORY));
 /**
  * MYSQL ACCESS CREDENTIALS
  */
-define('__MYSQLHOST', "localhost");
-define('__MYSQLUSER', "root");
+define('__MYSQLHOST', "");
+define('__MYSQLUSER', "");
 define('__MYSQLPASSWORD', "");
-define('__MYSQLDATABASE', "helloworld");
+define('__MYSQLDATABASE', "");
 
 /**
  * SITE_TITLE is the main title for the whole web application.
