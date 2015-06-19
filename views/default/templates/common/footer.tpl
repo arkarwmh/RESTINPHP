@@ -3,7 +3,7 @@
 		<div class="label bg_blue color_white">templates/common/footer.tpl</div>
 		<div class="contents">
 			<?php 
-				echo sprintf('A sample of %s &copy; %s %d. Developed by <a href="mailto:arkarwmh@gmail.com">%s</a>','REST-in PHP (RIP) MVC Framework v1.0','MIT Licensed',2013,'Arkar WINN MINN HTWE');
+				echo sprintf('A sample of %s &copy; %s %d. Developed by <a href="mailto:arkarwmh@gmail.com">%s</a>','REST-in PHP (RIP) MVC Framework v1.1','MIT Licensed',2015,'Arkar WINN MINN HTWE');
 				echo '<br />';
 				echo sprintf('<a href="http://www.restinphp.com" target="_blank">%s</a> | <a href="https://github.com/arkarwmh/RESTINPHP" target="_blank">%s</a>','www.restinphp.com','Project Repository'); 
 			?>
