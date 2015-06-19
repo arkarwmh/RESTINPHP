@@ -37,7 +37,7 @@ define('__DEFAULT_CONTROLLER', "home");
  * SITEBASE is the Full URL of the website.
  * IMPORTANT: WITHOUT Trailing Slash.
  */
-define('__SITEBASE', "http://localhost/rip");
+define('__SITEBASE', "http://rip.arkar.net");
 
 /**
  * REWRITEBASE is the documentroot of the website.
@@ -45,7 +45,7 @@ define('__SITEBASE', "http://localhost/rip");
  * If this is a Domain Name already, just leave a Single Slash '/'.
  * If it's a sub-directory, wrap the name inside two Slashes, like '/myproject/'.
  */
-define('__REWRITEBASE', '/rip/');
+define('__REWRITEBASE', '/');
 
 /**
  * DEFAULT_TEMPLATEPATH is the relative path to the CURRENT THEME (Template) directory.

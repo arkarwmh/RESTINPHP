@@ -23,7 +23,7 @@
 			</table>
 
 			<br />
-			<img src="/rip/images/sample.jpg" /><br />
+			<img src="<?php echo __SITEBASE; ?>/images/sample.jpg" /><br />
 			Htaccess Test (Image call sample)
 		</div>		
 	</div>

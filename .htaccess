@@ -4,7 +4,7 @@ Options +FollowSymLinks
 IndexIgnore */*
 
 RewriteEngine On
-RewriteBase /rip/
+RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d [OR]
