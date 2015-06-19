@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+DirectoryIndex index.php
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php/$1 [NC,L]
+</IfModule>
